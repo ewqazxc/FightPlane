@@ -1,0 +1,85 @@
+html,body{
+  height: 100%;
+}
+body{
+  background-image: url('../img/bg_1.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+.fp-index{
+  color: white;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  margin-top: -132.5px;
+  left: 50%;
+  margin-left: -125px;
+}
+.fp-index h1{
+  font-size: 50px;
+  text-shadow: 2px 8px 2px #000;
+}
+.fp-index button{
+  display: block;
+  width: 140px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto 14px;
+}
+.fp-panel{
+  width: 80%;
+  padding: 14px;
+  color: white;
+  border: 2px solid #ffffff;
+  background-color: #070808;
+  box-sizing: border-box;
+  position: absolute;
+  top:50%;
+  margin-top: -121.5px;
+  left: 10%;
+  text-align: center;
+  border-radius: 8px;
+}
+.fp-rule button,.fp-setting button,.fp-end button{
+  display: block;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 auto 10px;
+}
+.setting-group{
+  list-style: none;
+  padding: 0;
+}
+.setting-group select{
+  width: 100px;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/*默认隐藏*/
+.fp-index,
+.fp-rule,
+.fp-end,
+.fp-setting{
+	display: none;
+}
+
+/*状态切换*/
+[data-status="index"] .fp-index{
+	display: block;
+}
+[data-status="rule"] .fp-rule{
+	display: block;
+}
+[data-status="setting"] .fp-setting{
+	display: block;
+}
+[data-status="end"] .fp-end{
+	display: block;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>飞机大作战</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body data-status="index">
+	<canvas id="game" width="" height=""></canvas>
+<div class="fp-index">
+  <h1>飞机大作战</h1>
+  <div class="btn-group">
+  	<button class="js-start btn">开始游戏</button>
+  <button class="js-setting btn">游戏设置</button>
+  <button class="js-rule btn">游戏说明</button>
+  </div>
+</div>
+<div class="fp-rule fp-panel"  data-status="rule">
+  <h2>游戏说明</h2>
+  <p>通过手指移动飞机，躲避敌人，通过子弹射击敌人得分，游戏无限时，消灭小型飞机得100分，消灭大型飞机得1000分。</p>
+  <button class="js-confirm-rule">我明白了</button>
+</div>
+<div class="fp-setting fp-panel" data-status="setting">
+  <h2>游戏设置</h2>
+  <ul class="setting-group">
+    <li class="setting">
+      <span>音乐设置</span>
+      <select>
+        <option value="0">开启音乐</option>
+        <option value="1">关闭音乐</option>
+      </select>
+    </li>
+    <li class="setting">
+      <span>背景设置</span>
+      <select>
+        <option value="0">火焰山</option>
+        <option value="1">森林</option>
+      </select>
+    </li>
+    <li class="setting">
+      <span>战机设置</span>
+      <select>
+        <option value="0">蓝机</option>
+        <option value="1">红机</option>
+      </select>
+    </li>
+  </ul>
+  <button class="js-confirm-setting">确认设置</button>
+</div>
+<div class="fp-end fp-panel" data-status="end">
+	<h2>您已阵亡！</h2>
+	<button class="js-restart btn">再来！</button>
+	<button class="js-back-index btn">回到主菜单</button>
+</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/resource.js"></script>
+<script src="js/config.js"></script>
+<script src="js/element.js"></script>
+<script src="js/bullet.js"></script>
+<script src="js/plane.js"></script>
+<script src="js/enemy.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
